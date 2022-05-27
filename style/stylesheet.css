@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     
-
+    
 }
 body{
     background-color: black;
@@ -23,10 +23,11 @@ nav{
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
-    
-    
+    animation: glow 3s ease-in-out infinite;    
 
 }
+
+
 
 .nav-links {
     display: flex;
@@ -324,4 +325,13 @@ img {
     color: #ff3860;
     font-size: 9px;
     height: 13px;
+}
+
+@keyframes glow{
+    from {
+      text-shadow: 0 0 20px antiquewhite;
+    }
+    to {
+      text-shadow: 0 0 30px antiquewhite, 0 0 10px antiquewhite;
+}
 }
